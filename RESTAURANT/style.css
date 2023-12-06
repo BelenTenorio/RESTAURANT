@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .login-box {
+    width: 320px;
+    height: 320px;
+    background: #04a5f0;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: rgb(0, 23, 66) 169, 169;
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
