@@ -1,0 +1,33 @@
+
+
+//migrar a la base de datos todas las tablas
+    npx sequelize-cli db:migrate
+
+//Ejemplo de la creación de una tabla
+    npx sequelize-cli model:generate --name User --attributes Name:string,Password:string,RolId:integer,isActive:boolean
+
+//Inicializar el sequelize para crear las migraciones
+    npx sequelize-cli init
+
+//Correr la Api como DEV
+    npm run dev 
+
+//Instalar express para typeScript
+    npm install @types/express -D
+
+//Instalar libreria equivalente a nodemon
+    npm install ts-node-dev -D 
+
+//No recuerdo para que era este
+    npm run tsc -- --init 
+
+//Configuraciones extras para el manejo de tipados
+    npm install ts-standard -D     (lint)
+
+//Configuraciones necesarias para lint
+    "eslintConfig": {
+        "parserOptions": {
+            "project": "./tsconfig.json"
+        },
+        "extends":["./node_modules/ts-standard/eslintConfig.json"]
+    }
